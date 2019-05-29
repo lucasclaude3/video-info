@@ -4,6 +4,7 @@
     "electron": "electron ."
   },
   "devDependencies": {
-    "electron": "^5.0.2"
+    "electron": "^5.0.2",
+    "fluent-ffmpeg": "^2.1.2"
   }
 }
