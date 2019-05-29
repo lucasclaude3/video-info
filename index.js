@@ -16,6 +16,6 @@ app.on('ready', () => {
 
 ipcMain.on('video:submit', (event, path) => {
   ffmpeg.ffprobe(path, (err, metadata) => {
-    console.log(metadata.format.duration);
+    mainWindow.webContents.send('video:metadata', metadata.format.duration);
   });
 });
