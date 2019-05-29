@@ -1,5 +1,9 @@
 {
+  "name": "video-info",
+  "version": "1.0.0",
   "main": "index.js",
+  "author": "kahlua",
+  "license": "MIT",
   "scripts": {
     "electron": "electron ."
   },
