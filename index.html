@@ -1,10 +1,19 @@
 <head></head>
 <body>
     <h1>Video info</h1>
-    <form action="">
+    <form id="form" action="">
         <div>
             <label for="video-input">Select a video</label>
             <input id="video-input" type="file" accept="video/*">
         </div>
+        <button type="submit">Get info</button>
     </form>
+
+    <script>
+        document.querySelector('#form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const file = document.querySelector('#video-input').files[0];
+            console.log(file);
+        });
+    </script>
 </body>
